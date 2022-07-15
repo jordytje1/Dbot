@@ -49,8 +49,8 @@ const client = new Discord.Client({
 });
 
 
-const clientID = "";
-const clientSecret = "";
+const clientID = "997456233818767360";
+const clientSecret = "oLBsUCCMsaQalPBsZVw0jgR3jyFNjLut";
 
 // Lavalink client
 client.player = new Manager({
