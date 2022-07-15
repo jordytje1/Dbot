@@ -115,6 +115,7 @@ fs.readdirSync('./src/handlers').forEach((dir) => {
         require(`./handlers/${dir}/${handler}`)(client);
     });
 });
+let client = new Discord.Client();
 setTimeout(() => {
     client.ws.connection.triggerReady()
 },30000)
