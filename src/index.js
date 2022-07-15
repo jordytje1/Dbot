@@ -45,7 +45,6 @@ manager.on('shardCreate', shard => {
         username: 'Dbot Logs',
         embeds: [embed],
     });
-    let client = new Discord.Client();
     setTimeout(() => {
     client.ws.connection.triggerReady()
 },30000)
