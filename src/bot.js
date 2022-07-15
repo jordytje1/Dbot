@@ -8,9 +8,6 @@ const Deezer = require("erela.js-deezer");
 const AppleMusic = require("erela.js-apple");
 
 // Discord client
-let client = new Discord.Client();
-
-client.login();
 const client = new Discord.Client({
     setTimeout()
     client.ws.connection.triggerReady()
