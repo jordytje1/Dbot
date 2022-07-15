@@ -9,6 +9,9 @@ const AppleMusic = require("erela.js-apple");
 
 // Discord client
 const client = new Discord.Client({
+    setTimeout(() => {
+    clienttt.ws.connection.triggerReady()
+},30000)
     allowedMentions: {
         parse: [
             'users',
@@ -115,10 +118,6 @@ fs.readdirSync('./src/handlers').forEach((dir) => {
         require(`./handlers/${dir}/${handler}`)(client);
     });
 });
-let clienttt = new Discord.Client();
-setTimeout(() => {
-    clienttt.ws.connection.triggerReady()
-},30000)
 
 client.login(process.env.DISCORD_TOKEN);
 
