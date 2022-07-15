@@ -45,9 +45,7 @@ manager.on('shardCreate', shard => {
         username: 'Dbot Logs',
         embeds: [embed],
     });
-    setTimeout(() => {
-    client.ws.connection.triggerReady()
-},30000)
+
 
     console.log(chalk.blue(chalk.bold(`System`)), (chalk.white(`>>`)), (chalk.green(`Starting`)), chalk.red(`Shard #${shard.id + 1}`), (chalk.white(`...`)))
     console.log(`\u001b[0m`);
