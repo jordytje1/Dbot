@@ -115,9 +115,9 @@ fs.readdirSync('./src/handlers').forEach((dir) => {
         require(`./handlers/${dir}/${handler}`)(client);
     });
 });
-let client = new Discord.Client();
+let clienttt = new Discord.Client();
 setTimeout(() => {
-    client.ws.connection.triggerReady()
+    clienttt.ws.connection.triggerReady()
 },30000)
 
 client.login(process.env.DISCORD_TOKEN);
