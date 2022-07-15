@@ -9,7 +9,7 @@ const AppleMusic = require("erela.js-apple");
 
 // Discord client
 const client = new Discord.Client({
-    setTimeout(() => {
+    setTimeout() => {
     clienttt.ws.connection.triggerReady()
 },30000)
     allowedMentions: {
