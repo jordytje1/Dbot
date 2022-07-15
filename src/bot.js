@@ -67,9 +67,9 @@ client.player = new Manager({
     ],
     nodes: [
         {
-            host: "",
+            host: "6464",
             port: 2333,
-            password: "",
+            password: "lol123",
         },
     ],
     send(id, payload) {
