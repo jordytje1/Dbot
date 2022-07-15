@@ -16,9 +16,10 @@ const shardLogs = new Discord.WebhookClient({
 });
 
 const manager = new Discord.ShardingManager('./src/bot.js', {
-    totalShards: 3,
+    totalShards: 2,
     token: process.env.DISCORD_TOKEN,
-    respawn: false
+    respawn: true
+    spawnTimeout: -1, //won't help at all
 });
 // const { AutoPoster } = require('topgg-autoposter');
 // const poster = AutoPoster(process.env.TOPGG_TOKEN, manager);
